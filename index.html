@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Doogie</title>
+      <link rel="stylesheet" media="screen" href="css/reset.css">
+      <link rel="stylesheet" media="screen" href="css/editor.css">
+      <link rel="stylesheet" media="screen" href="css/canvas.css">
+      <link rel="stylesheet" media="screen" href="css/theme-doogie.css">
+      <link rel="stylesheet" media="screen" href="css/markdown-render.css">
+    </head>
+    <body class="preview">
+      <div class="titlebar">
+        <div class="buttons">
+          <a href="#" class="close-btn"></a>
+          <a href="#" class="minimize-btn"></a>
+          <a href="#" class="zoom-btn"></a>
+        </div>
+      </div>
+      <div id="linePos" class="linePos">1</div>
+      <textarea id="markdownEditor"></textarea>
+      <div id="markdownRenderer" class="MarkdownRenderer"><div id="markdownRendererContent"></div></div>
+    </body>
+    <script>
+      require('./src/views/renderer.js')
+    </script>
+  </html>

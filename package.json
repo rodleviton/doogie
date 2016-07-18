@@ -2,10 +2,34 @@
   "name": "doogie",
   "version": "1.0.0",
   "description": "The most fly markdown editor ever.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rodleviton/doogie.git"
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "start": "NODE_ENV=development electron .",
+    "test": "standard && mocha",
+    "pack": "build --dir",
+    "dist": "NODE_ENV=production build"
+  },
+  "build": {
+    "appId": "your.id",
+    "app-category-type": "your.app.category.type"
+  },
+  "author": "Rod Leviton",
+  "license": "MIT",
+  "dependencies": {
+    "codemirror": "5.16.0",
+    "markdown-it": "7.0.0"
+  },
+  "devDependencies": {
+    "codemirror": "5.16.0",
+    "devtron": "^1.2.1",
+    "electron-builder": "^5.12.1",
+    "electron-prebuilt": "^1.2.6",
+    "markdown-it": "7.0.0",
+    "npm-run-all": "2.2.0",
+    "spectron": "^3.2.6"
+  }
 }

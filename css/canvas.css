@@ -1,0 +1,213 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  word-wrap: break-word;
+}
+
+.CodeMirror {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* Scrollbar */
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  z-index: 200;
+}
+
+.preview .CodeMirror {
+  width: 50%
+}
+
+.MarkdownRenderer {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 5;
+}
+
+.preview .MarkdownRenderer {
+  display: block;
+}
+
+.preview .linePos {
+  right: 50%;
+}
+
+.linePos {
+  color: #fff;
+  position: fixed;
+  top: 12px;
+  right: 0;
+  margin-right: 40px;
+  text-align: right;
+  z-index: 100;
+}
+
+#open-file-manager {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  margin-right: 100px;
+  z-index: 15;
+}
+
+.CodeMirror-lines {
+    padding: 60px 40px 20px 100px;
+}
+
+.MarkdownRenderer {
+    padding: 60px 40px 20px 60px;
+}
+
+.CodeMirror-simplescroll-horizontal div, .CodeMirror-simplescroll-vertical div {
+  position: absolute;
+  background: #ccc;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+}
+
+.CodeMirror-simplescroll-horizontal, .CodeMirror-simplescroll-vertical {
+  position: absolute;
+  z-index: 6;
+  background: #eee;
+}
+
+.CodeMirror-simplescroll-horizontal {
+  bottom: 0; left: 0;
+  height: 8px;
+}
+
+.CodeMirror-simplescroll-horizontal div {
+  bottom: 0;
+  height: 100%;
+}
+
+.CodeMirror-simplescroll-vertical {
+  right: 0; top: 0;
+  width: 8px;
+}
+
+.CodeMirror-simplescroll-vertical div {
+  right: 0;
+  width: 100%;
+}
+
+.CodeMirror-overlayscroll .CodeMirror-scrollbar-filler, .CodeMirror-overlayscroll .CodeMirror-gutter-filler {
+  display: none;
+}
+
+.CodeMirror-overlayscroll-horizontal div, .CodeMirror-overlayscroll-vertical div {
+  position: absolute;
+  background: #bcd;
+  border-radius: 3px;
+}
+
+.CodeMirror-overlayscroll-horizontal, .CodeMirror-overlayscroll-vertical {
+  position: absolute;
+  z-index: 6;
+}
+
+.CodeMirror-overlayscroll-horizontal {
+  bottom: 0; left: 0;
+  height: 6px;
+}
+
+.CodeMirror-overlayscroll-horizontal div {
+  bottom: 0;
+  height: 100%;
+}
+
+.CodeMirror-overlayscroll-vertical {
+  right: 0; top: 0;
+  width: 6px;
+}
+
+.CodeMirror-overlayscroll-vertical div {
+  right: 0;
+  width: 100%;
+}
+
+/* title bar */
+
+.preview .titlebar {
+  width: 50%;
+}
+
+.titlebar {
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 50;
+  width: 100%;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  background: #000;
+  height: 40px;
+}
+
+.buttons {
+  -webkit-user-select: none;
+  -webkit-app-region: no-drag;
+  padding-left: 8px;
+  padding-top: 12px;
+  float: left;
+  line-height: 0px;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-family: HelveticaNeue, 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  color: #4d494d;
+  width: 11px;
+  height: 11px;
+  line-height: 11px;
+  margin-left: 4px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: default;
+  text-align: center;
+}
+
+.buttons a:hover {
+  text-decoration: none;
+}
+
+.close-btn {
+  background: #ff5c5c;
+  border: 1px solid #e33e41;
+}
+
+.close-btn:active {
+  background: #c14645;
+  border: 1px solid #b03537;
+}
+
+.minimize-btn {
+  background: #ffbd4c;
+  border: 1px solid #e09e3e;;
+}
+
+.minimize-btn:active {
+  background: #c08e38;
+  border: 1px solid #af7c33;
+}
+
+.zoom-btn {
+  background: #00ca56;
+  border: 1px solid #14ae46;
+}
+
+.zoom-btn:active {
+  background: #029740;
+  border: 1px solid #128435;
+}
