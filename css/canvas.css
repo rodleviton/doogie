@@ -202,12 +202,12 @@ body {
   border: 1px solid #af7c33;
 }
 
-.zoom-btn {
+.maximize-btn {
   background: #00ca56;
   border: 1px solid #14ae46;
 }
 
-.zoom-btn:active {
+.maximize-btn:active {
   background: #029740;
   border: 1px solid #128435;
 }
